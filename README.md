@@ -19,6 +19,4 @@ function loopend(caller,inteval,endcaller,timeout){
  let cl=setInterval(caller,interval)
  setTimeout(()=>{return clearInterval(cl),endcaller()},timeout)
 }
-
-
 ```
