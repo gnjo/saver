@@ -12,3 +12,13 @@ saver
  .isflg(k)
  .isval(k,v)
 ```
+
+```
+//loopend(()=>{},10,()=>{},1000)
+function loopend(caller,inteval,endcaller,timeout){
+ let cl=setInterval(caller,interval)
+ setTimeout(()=>{return clearInterval(cl),endcaller()},timeout)
+}
+
+
+```
